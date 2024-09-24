@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="max-width: 100%; margin: 0; padding: 0">
+    <style>
+      .button {
+        width: 100%;
+        display: block;
+        height: 40px;
+        margin: 5px 0;
+        border-radius: 0;
+      }
+    </style>
+    <div id="app">
+      <div style="padding: 0 10px">
+        <button class="button" onclick="snsLogin('GOOGLE_LOGIN')">
+          구글 로그인
+        </button>
+        <button class="button" onclick="snsLogin('APPLE_LOGIN')">
+          애플 로그인
+        </button>
+        <button class="button" onclick="snsLogin('KAKAO_LOGIN')">
+          카카오 로그인
+        </button>
+        <button class="button" onclick="idfa()">
+          광고아이디(IDFA / AAID) 조회
+        </button>
+        <button class="button" onclick="share()">공유하기 샘플</button>
+        <button class="button" onclick="deviceInfo()">기기 정보 조회</button>
+        <button class="button" onclick="setting()">앱설정 열기</button>
+        <button class="button" onclick="getPushToken()">푸시토큰 조회</button>
+        <button class="button" onclick="message('TEST_MESSAGE')">
+          샘플 푸시 테스트
+        </button>
+
+        <button class="button" onclick="message('CAMERA')">카메라</button>
+
+        <button class="button" onclick="getPosition()">현재위치 조회</button>
+      </div>
+
+      <div id="box" style="margin-top: 10px; padding: 0 10px; display: none">
+        <p style="margin-bottom: 10px">응답결과</p>
+        <div
+          id="response"
+          style="
+            background: #eee;
+            padding: 10px;
+            width: 100%;
+            word-break: break-all;
+            box-sizing: border-box;
+            font-size: 12px;
+          "></div>
+      </div>
+    </div>
+
+    <script>
+      function snsLogin(type) {
+        window.postMessage(JSON.stringify({key: type}));
+      }
+      function idfa() {
+        window.postMessage(JSON.stringify({key: 'IDFA'}));
+      }
+      function setting() {
+        window.postMessage(JSON.stringify({key: 'SETTING'}));
+      }
+      function getPushToken() {
+        window.postMessage(JSON.stringify({key: 'DEVICE_TOKEN'}));
+      }
+      function message(key) {
+        window.postMessage(JSON.stringify({key}));
+      }
+      function deviceInfo() {
+        window.postMessage(JSON.stringify({key: 'DEVICE_INFO'}));
+      }
+      function getPosition() {
+        window.postMessage(JSON.stringify({key: 'POSITION'}));
+      }
+
+      function share() {
+        window.postMessage(
+          JSON.stringify({
+            key: 'SHARE',
+            value: {
+              message: '공유하기 샘플',
+              title: '네이버 공유하기 샘플',
+              url: 'https://naver.com',
+            },
+          }),
+        );
+      }
+
+      function listen(event) {
+        document.querySelector('#box').style.display = 'block';
+        document.querySelector('#response').innerHTML = event.data;
+      }
+      document.addEventListener('message', listen);
+      window.addEventListener('message', listen);
+    </script>
+  </body>
+</html>

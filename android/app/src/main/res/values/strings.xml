@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">마이메르시</string>
++   <string name="kakao_app_key">83ab04312f89f1c5a6a81046677da74c</string>
+</resources>

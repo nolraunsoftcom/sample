@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>560125440578-571c14ph2s9ell6vstea57t4kq059r80.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.560125440578-571c14ph2s9ell6vstea57t4kq059r80</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>560125440578-ase69i66p1ai26u9nqrhi757leg6qhcu.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyArISIRWCyJ0nFdWwl2EfYNRi9JvIc6A9c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>560125440578</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.zh.mymerci</string>
+	<key>PROJECT_ID</key>
+	<string>expanded-bonbon-404215</string>
+	<key>STORAGE_BUCKET</key>
+	<string>expanded-bonbon-404215.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:560125440578:ios:f764d683d0c9db9a7ef3db</string>
+</dict>
+</plist>

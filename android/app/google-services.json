@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "560125440578",
+    "project_id": "expanded-bonbon-404215",
+    "storage_bucket": "expanded-bonbon-404215.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560125440578:android:0ec847266fca9da87ef3db",
+        "android_client_info": {
+          "package_name": "com.zh.mymerci"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560125440578-ase69i66p1ai26u9nqrhi757leg6qhcu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zh.mymerci",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2v-oWYZsJzCSmiOBVh336h8kwlyUdU3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560125440578-s1nia8127sofi3tu8ukeuk4fuhi3lcta.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "560125440578-571c14ph2s9ell6vstea57t4kq059r80.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zh.mymerci"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
